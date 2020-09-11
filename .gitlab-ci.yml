@@ -8,10 +8,4 @@ example-infracost-job:
   stage: example-stage
   extends: .infracost
   variables:
-    tfdir: terraform # optional (default: . )
-    tfjson: myplan.json # optional (default: generated plan)
-    TF_CLI_ARGS_plan: "-var-file=my.tfvars" # optional (default empty)
-    TF_VAR_examplekey: examplevalue # optional (default empty)
-  rules:
-    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "master"
-      when: on_success
+    tfdir: examples/terraform
