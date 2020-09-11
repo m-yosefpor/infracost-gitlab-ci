@@ -2,7 +2,7 @@ stages:
   - example-stage
 
 include:
-  remote: 'https://raw.githubusercontent.com/infracost/infracost-gitlab-ci/master/infracost.yml'
+  remote: 'https://raw.githubusercontent.com/m-yosefpor/infracost-gitlab-ci/master/infracost.yml'
 
 example-infracost-job:
   stage: example-stage
