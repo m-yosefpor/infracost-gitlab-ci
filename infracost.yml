@@ -1,0 +1,12 @@
+.infracost:
+  image:
+    name: infracost/infracost:latest
+    entrypoint: [""]
+  variables:
+    tfdir: .
+    tfjson:
+  ## TODO uncommnet after issue #97 fixed.
+  #before_script:
+  #- infracost --version
+  script:
+    - infracost --tfdir $tfdir --tfjson "$tfjson"
