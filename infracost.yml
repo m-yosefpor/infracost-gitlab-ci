@@ -4,7 +4,7 @@
     entrypoint: [""]
   variables:
     tfdir: .
-    tfjson:
+    tfjson: ""
   ## TODO uncommnet after issue #97 fixed.
   #before_script:
   #- infracost --version
